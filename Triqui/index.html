@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TriQui</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo text-center" href="index.html">
+                    <h1 class="logo__nombre no-margin">Tri<span class="logo__span">Qui</span></h1>
+                </a>
+                <div class="header__texto text-center">
+                    <h2 class="no-margin">JUEGO DE TRIQUI</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor contenido-principal">
+        <aside class="aside">
+            <div class="aside__imagen">
+                <img src="https://cdn.pixabay.com/photo/2016/08/11/10/52/emoji-1585401_960_720.png" alt="foto" id="imagen1">
+            </div>
+            <div>
+                <h2>Puntaje</h2>
+                <p class="jugador">Jugador 1</p>
+                <p class="puntos" id="puntos1">0</p>
+            </div>
+        </aside>
+        <content class="main">
+            <table class="main__table">
+                <tr>
+                    <td id="c1_1">
+                        <button class="button-sel button-select" type="button" id="btn_active1"></button>
+                    </td>
+                    <td id="c1_2">
+                        <button class="button-sel button-select" type="button" id="btn_active2"></button>
+                    </td>
+                    <td id="c1_3">
+                        <button class="button-sel button-select" type="button" id="btn_active3"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="c2_1">
+                        <button class="button-sel button-select" type="button" id="btn_active4"></button>
+                    </td>
+                    <td id="c2_2">
+                        <button class="button-sel button-select" type="button" id="btn_active5"></button>
+                    </td>
+                    <td id="c2_3">
+                        <button class="button-sel button-select" type="button" id="btn_active6"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="c3_1">
+                        <button class="button-sel button-select" type="button" id="btn_active7"></button>
+                    </td>
+                    <td id="c3_2">
+                        <button class="button-sel button-select" type="button" id="btn_active8"></button>
+                    </td>
+                    <td id="c3_3">
+                        <button class="button-sel button-select" type="button" id="btn_active9"></button>
+                    </td>
+                </tr>
+            </table>
+
+        </content>
+        <aside class="aside">
+            <div class="aside__imagen">
+                <img src="https://cdn.pixabay.com/photo/2016/08/21/19/27/emoticon-1610573_960_720.png" alt="foto" id="imagen2">
+            </div>
+            <div>
+                <h2>Puntaje</h2>
+                <p class="jugador">Jugador 2</p>
+                <p class="puntos" id="puntos2">0</p>
+            </div>
+        </aside>
+    </div>
+    <footer class="footer">
+        <div class="footer__buttons contenedor">
+            <button class="btn-nueva-partida" type="button" id="btn-reinicio">Nueva partida</button>
+        </div>
+    </footer>
+
+    <script type="text/javascript"  src="./js/script.js">
+    </script>
+</body>
+
+</html>

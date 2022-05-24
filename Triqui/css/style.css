@@ -1,0 +1,267 @@
+:root {
+    --primario: #84b6f4;
+    --secundario: #77dd77;
+    --colorDeApoyo: #fdf9c4;
+    --blanco: #ffffff;
+    --negro: #000;
+    --Tipografia: 'Open Sans', sans-serif;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--Tipografia);
+    font-size: 1.6rem;
+    background-color: var(--colorDeApoyo);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+/** Globales **/
+
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+
+/** Helpers **/
+
+.no-margin {
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/** Header **/
+
+.header {
+    background-color: var(--primario);
+    padding: 3rem 0;
+}
+
+.jugador, .puntos{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+}
+
+.logo {
+    color: var(--negro);
+}
+
+.logo__span {
+    font-size: 4rem;
+}
+
+.header__texto {
+    color: var(--negro);
+}
+
+
+
+/** Contenido principal **/
+
+.contenido-principal {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main {
+    background-color: var(--secundario);
+    border: .5rem solid white;
+    min-width: 30rem;
+    border-radius: .5rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin: 1rem;
+    justify-self: center;
+}
+
+.aside {
+    background-color: var(--primario);
+    margin: 2rem;
+    border: .5rem solid white;
+    min-width: 15rem;
+    border-radius: 1rem;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.aside__imagen img{
+    width: 10rem;
+}
+
+
+
+/** Tablet ------------------------------------------------------------------------------------**/
+@media (min-width: 768px) {
+
+    .contenedor {
+        width: min(90%, 120rem);
+        margin: 0 auto;
+    }
+
+    .contenido-principal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main {
+        height: calc(80vh - 50%);
+        min-width: 35rem;
+    }
+
+    .aside {
+        height: calc(80vh - 50%);
+
+    }
+
+    .aside__imagen img{
+        width: 15rem;
+    }
+}
+
+/** Desktop ----------------------------------------------------------------------------------------**/
+@media (min-width: 1200px) {
+
+    .main {
+        height: calc(90vh - 50%);
+        min-width: 50rem;
+    }
+
+    .aside {
+        height: calc(90vh - 50%);
+        min-width: 25rem;
+    }
+
+    .aside__imagen img{
+        width: 25rem;
+    }
+    
+    
+}
+
+
+.main__table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+
+}
+
+.main__table td {
+    text-align: center;
+    font-size: 4.5rem;
+    width: 33.33%;
+}
+
+.main__table tr {
+    height: 33.33%
+}
+
+#c1_1,
+#c1_2,
+#c2_1,
+#c2_2,
+#c3_1,
+#c3_2 {
+    border-right: .5rem solid white;
+}
+
+#c1_1,
+#c1_2,
+#c1_3,
+#c2_1,
+#c2_2,
+#c2_3 {
+    border-bottom: .5rem solid white;
+}
+
+.button-sel {
+    display: block;
+}
+
+.button-select {
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/** Footer **/
+
+.footer {
+    background-color: var(--primario);
+    padding: 5rem 0;
+}
+
+.footer__buttons{
+    display: flex;
+    justify-content: center;
+}
+.btn-nueva-partida{
+    min-width: 15rem;
+    height: 4rem;
+    color: var(--negro);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    background: #FFF92C;
+    box-shadow: 0 5px #F2B21D;
+    font-weight: bold;
+}
+
+.btn-nueva-partida:hover{
+    box-shadow: 0 3px #F2B21D;
+    top: 1px;
+}
+
+.btn-nueva-partida:active{
+    box-shadow: 0 0 #F2B21D;
+    top: 5px;
+}
